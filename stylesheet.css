@@ -1,0 +1,34 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(Cinzel-Regular.ttf);
+}
+.SIimage{
+   margin-top: 10%;
+}
+body {
+    
+    font-family: myFirstFont;
+    background-color: crimson;
+    color: white;
+    text-align: center;
+}
+.SIbutton {
+  background-color: palevioletred;
+  color: black;
+}
+.stripeOne {
+  transform-origin: left;
+  background-color: coral;
+  transform: rotate(45deg);
+  color: coral;
+}
+.stripeTwo {
+  transform-origin: right;
+  background-color: palevioletred;
+  transform: rotate(45deg);
+  color: palevioletred;
+}
+.SIheader {
+  background-color: salmon;
+}
+
