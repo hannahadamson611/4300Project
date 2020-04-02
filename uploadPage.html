@@ -1,71 +1,36 @@
 <!DOCTYPE html>
-<head>
-    <style>
-    .uploadForm {
-        /* Center the form on the page */
-        margin: 0 auto;
-        width: 600px;
+<html>
+    <head>
+        <link rel = "stylesheet" type = "text/css" href = "stylesheet.css">
         
-    }
-    .uploadForm fieldset{
-        /* Form outline */
-        padding: 1em;
-        border: 1px solid #000;
-        border-radius: 1em;
-    }
-    .uploadForm legend{
-        text-align: center;
-    }
-    .formList{
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-    .formList label{
-        /*make sure labels are aligned to the right pushed up against fields*/ 
-        display:inline-block;
-        width: 100px;
-        text-align: right;
-    }
-    .formList textarea{
-        /*so label is aligned to the top of the textarea*/
-        vertical-align: top;
-    }
-    .formList textarea, input[type = "number"]{
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    .formList li + li{
-        margin-top: 1em;
-    }
+    </head>
 
-    </style>
-</head>
+    <body>
 
-<body>
+        
+        <form id ="itemListing" class = "uploadForm" method = "post">
+            <fieldset>
+                <legend>List your Art!</legend>
+                <ul class = "formList">
+                    <li>
+                        <label for ="upload">Upload Image</label>
+                        <input type ="file" id ="upload" required>
+                    </li>
+                    <li>
+                        <label for ="price">Price</label>
+                        <input size ="20" maxlength="6" type = "number" id ="price" required>
 
-    
-    <form id ="itemListing" class = "uploadForm" method = "post">
-        <fieldset>
-            <legend>List your Art!</legend>
-            <ul class = "formList">
-                <li>
-                    <label for ="upload">Upload Image</label>
-                    <input type ="file" id ="upload" required>
-                </li>
-                <li>
-                    <label for ="price">Price</label>
-                    <input size ="20" maxlength="6" type = "number" id ="price" required>
-
-                </li>
-                <li>
-                    <label for ="description">Description</label>
-                    <textarea id =  "description" minlength="1" cols ="40" rows = "10" required></textarea>
-                </li>
-                <li style="text-align: center;">
-                    <input type = "submit">
-                </li>
-            </ul>
-        </fieldset>
-    </form>
-    
-</body>
+                    </li>
+                    <li>
+                        <label for ="description">Description</label>
+                        <textarea id =  "description" minlength="1" cols ="40" rows = "10" required></textarea>
+                    </li>
+                    <li style="text-align: center;">
+                        <input type = "submit">
+                    </li>
+                </ul>
+            </fieldset>
+        </form>
+        
+    </body>
+</html>
