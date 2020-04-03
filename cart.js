@@ -150,8 +150,6 @@ function clearPaymentDetails(listForClearing){
     }
 
 }
-function submitOrder(){
-    if(confirm("Please make sure to review your order before clicking OK")){
-        document.getElementById("paymentAndShipping").submit();
-    }
+function submitUpload(){
+    window.location ="buyOrSell.html";
 }

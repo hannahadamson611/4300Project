@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <title>Add Listing</title>
+        <meta charset="utf-8"/>
         <link rel = "stylesheet" type = "text/css" href = "stylesheet.css">
-        
+        <script src="cart.js"></script>
     </head>
 
-    <body>
+    <body class ="bodycolor">
 
         
-        <form id ="itemListing" class = "uploadForm" method = "post">
+        <form id ="itemListing" action ="buyOrSell.html" class = "uploadForm" method = "post" onsubmit="submitUpload()">
             <fieldset>
                 <legend>List your Art!</legend>
                 <ul class = "formList">
@@ -18,7 +20,7 @@
                     </li>
                     <li>
                         <label for ="price">Price</label>
-                        <input size ="20" maxlength="6" type = "number" id ="price" required>
+                        <input  type = "number" id ="price" required>
 
                     </li>
                     <li>
@@ -26,10 +28,12 @@
                         <textarea id =  "description" minlength="1" cols ="40" rows = "10" required></textarea>
                     </li>
                     <li style="text-align: center;">
-                        <input type = "submit">
+                        <input type = "submit" value ="Add Listing">
                     </li>
                 </ul>
             </fieldset>
+            <br>
+            <a href ="buyOrSell.html">Back to Home</a>
         </form>
         
     </body>

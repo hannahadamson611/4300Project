@@ -5,16 +5,33 @@
 .SIimage{
    margin-top: 10%;
 }
-.backgroundColor {
-    
-    font-family: myFirstFont;
-   
-    color: white;
-    text-align: center;
+
+
+.textBoxesHannah {
+  text-align: right;
+  margin-right: 41%;
 }
 
 .backgroundColor {
+  font-family: myFirstFont;
+  text-align: center;
+  color: white;
+  background-color: crimson;
+
+}
+
+a{
+  color:black;
+}
+.bodycolor {
     background-color: crimson;
+    font-family: myFirstFont;
+    color: white;
+}
+input[type="text"],input[type = "number"],input[type = "password"], textarea,select {
+
+  background-color : salmon; 
+
 }
 
 .SIbutton {
@@ -115,6 +132,7 @@ table.tableCart td{
 }
 .paymentInfoForm .inStoreCredit{
   border:1px solid black;
+  padding-left: 4px;
 }
 .submissionContainer{
   width: 100%;
