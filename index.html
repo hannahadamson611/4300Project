@@ -101,7 +101,7 @@
                   window.alert("Please Enter Password");
               }else {
 		  var string = document.getElementById("em").value;
-		  if (string.includes("@")) {
+		  if ((string.includes("@")) && string.includes(".")) {
 		      window.location.replace('buyOrSell.html');
 		  } else {
 		      window.alert("Please Enter Valid Email Address");
