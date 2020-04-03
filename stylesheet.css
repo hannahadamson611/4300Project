@@ -16,6 +16,11 @@
 .backgroundColor {
     background-color: crimson;
 }
+input[type="text"],input[type = "number"] textarea {
+
+  background-color : salmon; 
+
+}
 
 .SIbutton {
   background-color: palevioletred;
