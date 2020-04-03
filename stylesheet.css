@@ -10,7 +10,9 @@
     font-family: myFirstFont;
    
     color: white;
-    text-align: center;
+    display:inline-block;
+    margin: 0 auto;
+    width: 60%;
 }
 
 .backgroundColor {
