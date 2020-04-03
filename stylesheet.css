@@ -109,9 +109,13 @@ table.tableCart td{
   width: 70%;
   border-radius: 1em;
 }
+.paymentInfoForm .inStoreCredit{
+  border:1px solid black;
+}
 .submissionContainer{
   width: 100%;
   text-align: center;
 }
+
 
 /*END CHECKOUT*/

@@ -133,12 +133,22 @@ function changePaymentDetails(){
 
         document.getElementById("paymentList").appendChild(listElem4);
     }
+    else if(document.getElementById("paymentMethod").value == "storeCredit"){
+        var listElem = document.createElement("li");
+        var divElem = document.createElement("div");
+        divElem.innerHTML = "Total Credit Available: "
+        divElem.className = "inStoreCredit"
+        listElem.appendChild(divElem);
+
+        document.getElementById("paymentList").appendChild(listElem);
+    }
 }
 function clearPaymentDetails(listForClearing){
-    //i is set to one so we do not remove the payment method node
-    for(let i = 1; i < listForClearing.length;i++){
-        listForClearing[i].remove();
+   
+    while(listForClearing.length > 1){
+        listForClearing[1].remove();
     }
+
 }
 function submitOrder(){
     if(confirm("Please make sure to review your order before clicking OK")){
