@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang ="en">
     <head>
+        <title>Checkout</title>
+        <meta charset="utf-8"/>
         <link rel = "stylesheet" type = "text/css" href = "stylesheet.css">
         <script src="cart.js"></script>
     </head>
@@ -12,8 +14,12 @@
                     <tr><th class = "cartItem">Item</th><th class="cartOthersAttribs">Quantity</th><th class="cartOthersAttribs">Price</th> </tr>
                     
                 </table>
+                <div>
+                    <br>
+                    Cart is currently Empty(Functionality coming soon!)
+                </div>
             </fieldset>
-            <form class = "paymentInfoForm" method = "post" id="paymentAndShipping">
+            <form class = "paymentInfoForm" method = "post" id="paymentAndShipping" action="shopPage.html">
                 <fieldset >
                     <legend>Payment and Shipping information</legend>
                     <ul style = "border-bottom: 1px solid black;padding-bottom: 5px; " id ="paymentList" class = "formList">
@@ -36,11 +42,11 @@
                         </li>
                         <li>
                             <label for="address1">Address Line 1</label>
-                            <input id="address1" type = "text" required pattern = "\d\s" size ="20">
+                            <input id="address1" type = "text" required pattern = "\d+\s[A-Za-z]+\s[A-Za-z]+" size ="20">
                         </li>
                         <li>
                             <label for="address2">Address Line 2</label>
-                            <input id = "address2" type = "text"  pattern = "\d\s" size ="20">
+                            <input id = "address2" type = "text"  pattern = "\d+\s[A-Za-z]+\s[A-Za-z]+" size ="20">
                         </li>
                         <li>
                             <label for="city">City</label>
@@ -55,7 +61,7 @@
                             <input id="ZIP" type = "text" required pattern = "\d{5}" size ="20">
                         </li>
                     </ul>
-                    <div id="button container" class = "submissionContainer">
+                    <div id="buttoncontainer" class = "submissionContainer">
                         <input type = "submit"  value="Place Order" style="margin-top: 5px;">
                         
                     </div>
@@ -63,7 +69,7 @@
                 </fieldset>
             </form>
             <br>
-            
+
             <a href="shopPage.html">Back to ListingS</a>
         </div>
     </body>

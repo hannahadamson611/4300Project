@@ -132,6 +132,7 @@ table.tableCart td{
 }
 .paymentInfoForm .inStoreCredit{
   border:1px solid black;
+  padding-left: 4px;
 }
 .submissionContainer{
   width: 100%;
