@@ -34,6 +34,7 @@ body.background {
 }
 
 
+/*UPLOAD PAGE*/
 .uploadForm {
   /* Center the form on the page */
   margin: 0 auto;
@@ -57,8 +58,9 @@ body.background {
 .formList label{
   /*make sure labels are aligned to the right pushed up against fields*/ 
   display:inline-block;
-  width: 100px;
+  width: 130px;
   text-align: right;
+  
 }
 .formList textarea{
   /*so label is aligned to the top of the textarea*/
@@ -71,12 +73,18 @@ body.background {
   margin-top: 1em;
 
 }
+/*END UPLOAD*/
 
 
-.cart{
+/*checkout page*/
+.cartContainer{
   /* Center the container on the page */
   margin: 0 auto;
   width: 60%;
+  
+  min-height: 300px;
+}
+.cartFieldset{
   border-radius: 1em;
 }
 table.tableCart{
@@ -92,3 +100,18 @@ table.tableCart td{
 .cartOthersAttribs{
   width:15%;
 }
+.paymentInfoForm{
+  align-content: left;
+
+
+}
+.paymentInfoForm fieldset{
+  width: 70%;
+  border-radius: 1em;
+}
+.submissionContainer{
+  width: 100%;
+  text-align: center;
+}
+
+/*END CHECKOUT*/

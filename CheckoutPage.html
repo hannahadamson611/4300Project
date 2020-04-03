@@ -2,13 +2,67 @@
 <html>
     <head>
         <link rel = "stylesheet" type = "text/css" href = "stylesheet.css">
+        <script src="cart.js"></script>
     </head>
     <body>
-        <fieldset class = "cart">
-            <legend>Cart view</legend>
-            <table class = "tableCart">
-                <tr><th class = "cartItem">Item</th><th class="cartOthersAttribs">Quantity</th><th class="cartOthersAttribs">Price</th> </tr>
-            </table>
-        </fieldset>
+        <div class = "cartContainer">
+            <fieldset class = "cartFieldset">
+                <legend>Cart view</legend>
+                <table class = "tableCart" id ="tableCart">
+                    <tr><th class = "cartItem">Item</th><th class="cartOthersAttribs">Quantity</th><th class="cartOthersAttribs">Price</th> </tr>
+                    
+                </table>
+            </fieldset>
+            <form class = "paymentInfoForm" method = "post" id="paymentAndShipping">
+                <fieldset >
+                    <legend>Payment and Shipping information</legend>
+                    <ul style = "border-bottom: 1px solid black;padding-bottom: 5px; " id ="paymentList" class = "formList">
+                        <li>
+                            <label for ="paymentMethod">Payment Method:</label>
+                            <select id = "paymentMethod" onchange ="changePaymentDetails()">
+                                <option value ="" selected disabled hidden>Choose Method</option>
+                                <option value = "storeCredit">Store Credit</option>
+                                <option value = "creditDebitCard">Credit/Debit Card</option>
+                            </select>
+                        </li>
+
+                    
+                    </ul>
+                    <p style = "margin-top: 5px;margin-bottom: 5px;">Shipping Info</p>
+                    <ul id = "shippingList" class = "formList" style = "border-bottom: 1px solid; padding-bottom: 5px;">
+                        <li>
+                            <label for="recipient">Recipient</label>
+                            <input id ="recipient" type = "text" required>
+                        </li>
+                        <li>
+                            <label for="address1">Address Line 1</label>
+                            <input id="address1" type = "text" required pattern = "\d\s" size ="20">
+                        </li>
+                        <li>
+                            <label for="address2">Address Line 2</label>
+                            <input id = "address2" type = "text"  pattern = "\d\s" size ="20">
+                        </li>
+                        <li>
+                            <label for="city">City</label>
+                            <input id="city" type = "text" required pattern = "[A-Za-z]+" size ="20">
+                        </li>
+                        <li>
+                            <label for="state">State</label>
+                            <input id="state" type = "text" required pattern = "[A-Za-z]+" size ="20">
+                        </li>
+                        <li>
+                            <label for="ZIP">ZIP code</label>
+                            <input id="ZIP" type = "text" required pattern = "\d{5}" size ="20">
+                        </li>
+                    </ul>
+                    <div id="button container" class = "submissionContainer">
+                        <input type = "button" onclick="submitOrder()" value="Place Order" style="margin-top: 5px;">
+                        
+                    </div>
+                    
+                </fieldset>
+            </form>
+            
+        </div>
     </body>
 </html>
