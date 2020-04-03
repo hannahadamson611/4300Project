@@ -100,7 +100,12 @@
               } else if (document.getElementById("pw").value == "") {
                   window.alert("Please Enter Password");
               }else {
-              window.location.replace('buyOrSell.html');
+		  var string = document.getElementById("em").value;
+		  if (string.includes("@")) {
+		      window.location.replace('buyOrSell.html');
+		  } else {
+		      window.alert("Please Enter Valid Email Address");
+		  }
               //window.alert(document.getElementById("testing").innerHTML);     
               }
           }
