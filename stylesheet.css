@@ -8,21 +8,21 @@
 .backgroundColor {
     
     font-family: myFirstFont;
-<<<<<<< HEAD
+
    
     color: white;
     
-=======
+
     text-align: center;
     color: white;
-<<<<<<< HEAD
-    display:inline-block;
-    margin: 0 auto;
-    width: 60%;
->>>>>>> f64859ad88ba334168af13be59fb96a520595dde
-=======
-    
->>>>>>> 8648952246e72664edd04da42fc02305c7542e08
+
+
+
+}
+
+.textBoxesHannah {
+  text-align: right;
+  margin-right: 45%;
 }
 
 .backgroundColor {
