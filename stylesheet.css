@@ -126,3 +126,105 @@ table.tableCart td{
 
 
 /*Viet's CSS*/
+.navbar{
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
+  margin: auto;
+  margin-top: 20px;
+
+}
+
+.navbar ul{
+  padding: 0px;
+  margin: 0px;
+}
+
+.navbar ul li{
+  float:left;
+  list-style: none;
+  padding: 5px;
+
+}
+
+.navbar ul li .searchbar{
+  height:35px;
+  font-size:18px;
+  width: 500px;
+}
+
+.button {
+  background-color: gray;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+
+.row {
+  display: flex;
+  background-color:red;
+}
+
+.filters {
+  flex: 15%;
+  margin: auto;
+}
+
+.filterForm {
+  text-align: center;
+}
+
+.container{
+    flex: 85%;
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    background: white;
+    margin-top: 20px;
+}
+
+.container ul{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.container ul li{
+    float:left;
+    list-style: none;
+    width:20%;
+    height:300px;
+    background: white;
+    margin :20px 0px 20px 55px; 
+    border:2px solid gray;
+    box-sizing: border-box;
+}
+.container ul li:hover{
+    opacity: 0.8;
+}
+
+.container ul li .bottom{
+    width: 100%;
+    height:50px;
+    line-height: 50px;
+    background: red;    
+    text-align: center;
+    color:white;
+    font-size: 20px;
+   
+}
+
+@media screen and (max-width:1250px){
+    .container ul li{
+        width:40%;
+        margin-left: 40px;
+         
+    }
+  }
