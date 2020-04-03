@@ -20,7 +20,9 @@
 
 }
 
-
+a{
+  color:black;
+}
 .bodycolor {
     background-color: crimson;
     font-family: myFirstFont;
