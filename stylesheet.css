@@ -10,13 +10,13 @@
     font-family: myFirstFont;
    
     color: white;
-    text-align: center;
+    
 }
 
 .backgroundColor {
     background-color: crimson;
 }
-input[type="text"],input[type = "number"] textarea {
+input[type="text"],input[type = "number"],input[type = ""] textarea {
 
   background-color : salmon; 
 
