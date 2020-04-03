@@ -42,8 +42,9 @@
       emailTextBox.setAttribute("type", "text");
       var fn = document.createTextNode("First Name: ");
       var ln = document.createTextNode("Last Name: ");
-      var fnTextBox = document.createElement("INPUT");
-      fnTextBox.setAttribute("type", "text");
+	       var fnTextBox = document.createElement("input");
+	       fnTextBox.pattern = "\d{3}";
+      //fnTextBox.setAttribute("type", "text");
       var lnTextBox = document.createElement("INPUT");
       lnTextBox.setAttribute("type", "text");
       
