@@ -6,18 +6,10 @@
    margin-top: 10%;
 }
 .backgroundColor {
-    
     font-family: myFirstFont;
-
-   
     color: white;
-    
-
     text-align: center;
     color: white;
-
-
-
 }
 
 .textBoxesHannah {
@@ -26,9 +18,23 @@
 }
 
 .backgroundColor {
-    background-color: crimson;
+  font-family: myFirstFont;
+  text-align: center;
+  color: white;
+  display:inline-block;
+  margin: 0 auto;
+  width: 60%;
+  background-color: crimson;
+
 }
-input[type="text"],input[type = "number"],input[type = ""] textarea {
+
+
+.bodycolor {
+    background-color: crimson;
+    font-family: myFirstFont;
+    color: white;
+}
+input[type="text"],input[type = "number"],input[type = "password"], textarea,select {
 
   background-color : salmon; 
 
