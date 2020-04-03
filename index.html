@@ -23,9 +23,17 @@
 	    document.getElementById("div").appendChild(login);
 	       document.getElementById("div").appendChild(loginPW);
 	       document.getElementById("testing").innerHTML=".";
-          } else {
-              //window.alert(document.getElementById("testing").innerHTML);     
+	      UNTextBox.id = "un";
+	      PWTextBox.id = "pw";
+	  } else {
+	      if(document.getElementById("un").value == "") {
+                  window.alert("Please Enter Username");
+              } else if (document.getElementById("pw").value == "") {
+                  window.alert("Please Enter Password");
+              }else {
               window.location.replace('buyOrSell.html');
+	      //window.alert(document.getElementById("testing").innerHTML);     
+              
           }
 
   }
@@ -75,9 +83,26 @@
 	    document.getElementById("div").appendChild(signUp);
 	       document.getElementById("div").appendChild(signUpPW);
 	       document.getElementById("testing").innerHTML=".";
+          lnTextBox.id = "ln";
+              fnTextBox.id = "fn";
+              PWTextBox.id = "pw";
+             UNTextBox.id = "un";
+              emailTextBox.id = "em";
           } else {
-              //window.alert(document.getElementById("testing").innerHTML);     
+             if(document.getElementById("fn").value == "") {
+                  window.alert("Please Enter First Name");
+              } else if (document.getElementById("ln").value == "") {
+                  window.alert("Please Enter Last Name");
+              } else if (document.getElementById("em").value =="") {
+                  window.alert("Please Enter Email");
+              } else if(document.getElementById("un").value == "") {
+                  window.alert("Please Enter Username");
+              } else if (document.getElementById("pw").value == "") {
+                  window.alert("Please Enter Password");
+              }else {
               window.location.replace('buyOrSell.html');
+              //window.alert(document.getElementById("testing").innerHTML);     
+              }
           }
 
       }
