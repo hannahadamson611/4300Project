@@ -5,13 +5,14 @@
 .SIimage{
    margin-top: 10%;
 }
-body {
+body.background {
     
     font-family: myFirstFont;
     background-color: crimson;
     color: white;
     text-align: center;
 }
+
 .SIbutton {
   background-color: palevioletred;
   color: black;
@@ -32,3 +33,62 @@ body {
   background-color: salmon;
 }
 
+
+.uploadForm {
+  /* Center the form on the page */
+  margin: 0 auto;
+  width: 600px;
+  
+}
+.uploadForm fieldset{
+  /* Form outline */
+  padding: 1em;
+  border: 1px solid #000;
+  border-radius: 1em;
+}
+.uploadForm legend{
+  text-align: center;
+}
+.formList{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.formList label{
+  /*make sure labels are aligned to the right pushed up against fields*/ 
+  display:inline-block;
+  width: 100px;
+  text-align: right;
+}
+.formList textarea{
+  /*so label is aligned to the top of the textarea*/
+  vertical-align: top;
+}
+.formList textarea, input[type = "number"]{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.formList li + li{
+  margin-top: 1em;
+
+}
+
+
+.cart{
+  /* Center the container on the page */
+  margin: 0 auto;
+  width: 60%;
+  border-radius: 1em;
+}
+table.tableCart{
+  width: 100%;
+  border-collapse: collapse;
+}
+table.tableCart td{
+  border:1px solid black;
+}
+.cartItem{
+  width:70%;
+}
+.cartOthersAttribs{
+  width:15%;
+}
