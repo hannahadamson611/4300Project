@@ -8,9 +8,13 @@
 body {
     
     font-family: myFirstFont;
-    background-color: crimson;
+   
     color: white;
     text-align: center;
+}
+
+.backgroundColor {
+    background-color: crimson;
 }
 
 .SIbutton {
