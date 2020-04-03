@@ -8,9 +8,17 @@
 .backgroundColor {
     
     font-family: myFirstFont;
+<<<<<<< HEAD
    
     color: white;
     
+=======
+    text-align: center;
+    color: white;
+    display:inline-block;
+    margin: 0 auto;
+    width: 60%;
+>>>>>>> f64859ad88ba334168af13be59fb96a520595dde
 }
 
 .backgroundColor {
