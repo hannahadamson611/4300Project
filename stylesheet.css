@@ -144,13 +144,24 @@ table.tableCart td{
 
 
 /*Viet's CSS*/
+
+.toprow{
+  display: flex;
+  background-color: palevioletred;
+}
+
+.logo {
+  flex: 15%;
+  margin: auto;
+}
+
 .navbar{
-  width: 85%;
+  flex: 85%;
   margin: auto;
   display: flex;
   justify-content: flex-end;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 40px;
 
 }
 
@@ -187,17 +198,16 @@ table.tableCart td{
 
 .row {
   display: flex;
-  background-color:red;
+  background-color:crimson;
 }
 
 .filters {
   flex: 15%;
-  margin: auto;
-}
-
-.filterForm {
+  margin-top: 50px;
+  justify-content: center;
   text-align: center;
 }
+
 
 .container{
     flex: 85%;
@@ -213,14 +223,13 @@ table.tableCart td{
     margin: 0px;
 }
 
-
 .container ul li{
     float:left;
     list-style: none;
     width:20%;
     height:300px;
     background: white;
-    margin :20px 0px 20px 55px; 
+    margin : 30px;
     border:2px solid gray;
     box-sizing: border-box;
 }
@@ -232,11 +241,19 @@ table.tableCart td{
     width: 100%;
     height:50px;
     line-height: 50px;
-    background: red;    
+    background: crimson;    
     text-align: center;
     color:white;
     font-size: 20px;
    
+}
+
+.centerImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:80%;
+  height: 80%;
 }
 
 @media screen and (max-width:1250px){

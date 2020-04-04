@@ -5,54 +5,50 @@
 	<title>OSAS MarketPlace</title>
 	<link rel="stylesheet" href="stylesheet.css">
 	<script>
-
-
+        function onClick(){
+            //Expand
+        }
 	</script>
 </head>
 <body>
+<div class="toprow">
+    <div class="logo">
+        <img src="logo.png" height="50%" width="50%">
+    </div>
 <div class="navbar">
     <ul>
-        <li><img src="logo.png" height="75px" ></li>
         <li>
             <form>
                 <input type="text" placeholder="Search" class="searchbar">
             </form>
         </li>
-        <li><button class="button">Upload</button></li>
-        <li><button class="button">Checkout</button></li>
+        <li><form action="uploadPage.html"><button class="button" type="submit">Upload</button></form></li>
+        <li><form action="CheckoutPage.html"><button class="button" type="submit">Checkout</button></form></li>
     </ul>
-
 </div>
+</div>
+
 <div class="row">
     <div class="filters">
-        <form class="filterForm">
+        <h2>Filter Results</h2>
+        <form>
             <input type="radio" id="Price" name="Price">
             <label for="Price">Price High to Low</label><br>
             <input type="radio" id="Price2" name="Price">
             <label for="Price2">Price Low to High</label><br>
-            <input type="radio" id="Recently Posted">
-            <label for="Recently Posted">Recently Posted</label>
+            <input type="checkbox" id="Recently Posted">
+            <label for="Recently Posted">Recently Posted</label><br>
+            <input type="checkbox" id="painting">
+            <label for="painting">Paintings</label><br>
+            <input type="checkbox" id="sculpture">
+            <label for="sculpture">Sculptures</label>
         </form>
     </div>
     <div class="container">
+
         <ul>
-            <li> <div class="bottom">Example Title</div> </li>
-            <li> <div class="bottom">Example Title</div> </li>
-            <li> <div class="bottom">Example Title</div> </li>
-            <li> <div class="bottom">Example Title</div> </li>
-            <li> <div class="bottom">Example Title</div> </li>
-            <li> <div class="bottom">Example Title</div> </li>
-            <li> <div class="bottom">Example Title</div> </li>
-            <li> <div class="bottom">Example Title</div> </li>
-            <li> <div class="bottom">Example Title</div> </li>
-            <li> <div class="bottom">Example Title</div> </li>
-            <li> <div class="bottom">Example Title</div> </li>
-            <li> <div class="bottom">Example Title</div> </li>
-            <li> <div class="bottom">Example Title</div> </li>
-            <li> <div class="bottom">Example Title</div> </li>
-            <li> <div class="bottom">Example Title</div> </li>
-            <li> <div class="bottom">Example Title</div> </li>
-            
+            <li onclick="onClick()"> <div class="bottom">Example Title</div><img src="test.jpg" class="centerImg"></li>
+            <li onclick="onClick()"> <div class="bottom">Example Title</div><img src="test.jpg" class="centerImg"></li><li onclick="onClick()"> <div class="bottom">Example Title</div><img src="test.jpg" class="centerImg"></li><li onclick="onClick()"> <div class="bottom">Example Title</div><img src="test.jpg" class="centerImg"></li><li onclick="onClick()"> <div class="bottom">Example Title</div><img src="test.jpg" class="centerImg"></li><li onclick="onClick()"> <div class="bottom">Example Title</div><img src="test.jpg" class="centerImg"></li><li onclick="onClick()"> <div class="bottom">Example Title</div><img src="test.jpg" class="centerImg"></li><li onclick="onClick()"> <div class="bottom">Example Title</div><img src="test.jpg" class="centerImg"></li><li onclick="onClick()"> <div class="bottom">Example Title</div><img src="test.jpg" class="centerImg"></li><li onclick="onClick()"> <div class="bottom">Example Title</div><img src="test.jpg" class="centerImg"></li><li onclick="onClick()"> <div class="bottom">Example Title</div><img src="test.jpg" class="centerImg"></li><li onclick="onClick()"> <div class="bottom">Example Title</div><img src="test.jpg" class="centerImg"></li><li onclick="onClick()"> <div class="bottom">Example Title</div><img src="test.jpg" class="centerImg"></li><li onclick="onClick()"> <div class="bottom">Example Title</div><img src="test.jpg" class="centerImg"></li><li onclick="onClick()"> <div class="bottom">Example Title</div><img src="test.jpg" class="centerImg"></li><li onclick="onClick()"> <div class="bottom">Example Title</div><img src="test.jpg" class="centerImg"></li>
         </ul>
     </div>
 </div>
