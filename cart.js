@@ -56,7 +56,7 @@ function changePaymentDetails(){
         cardText.size = "16";
         cardText.maxLength = "16";
         cardText.minLength = "16"
-        cardText.pattern = "\d{16}"
+        cardText.pattern = "\\d{16}"
         cardText.required = true;
 
         //attach
@@ -80,7 +80,7 @@ function changePaymentDetails(){
         cvvText.size = "3";
         cvvText.maxLength = "3";
         cvvText.minLength = "3";
-        cvvText.pattern = "\d{3}";
+        cvvText.pattern = "\\d{3}";
         cvvText.required = true;
 
         //attach
@@ -102,7 +102,7 @@ function changePaymentDetails(){
         cardHolderText.type = "text";
         cardHolderText.size = "24";
         
-        cardHolderText.pattern = "[a-zA-z]+\s[a-zA-z]+";
+        cardHolderText.pattern = "[a-zA-z]+\\s[a-zA-z]+";
         cardHolderText.required = true;
 
         //attach
@@ -124,7 +124,7 @@ function changePaymentDetails(){
         ExprText.type = "text";
         ExprText.size = "7";
         ExprText.placeholder = "MM-YYYY"
-        ExprText.pattern = "\d\d\/\d\d\d\d";
+        ExprText.pattern = "\\d\\d-\\d\\d\\d\\d";
         ExprText.required = true;
 
         //attach
